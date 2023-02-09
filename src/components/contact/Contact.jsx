@@ -19,13 +19,8 @@ export default function Contact() {
         if (!name || !email || !message) {
             return alert('Silahkan Lengkapi Data !')
         }
-        console.log({ name, email, message })
 
-        // < Link to = { 'https://wa.me/83857768930'} >
-
-        // </ >
-
-        window.location.href = 'https://wa.me/83857768930'
+        window.location.href = 'https://wa.me/083857768930'
 
         e.target.name.value = ''
         e.target.email.value = ''
