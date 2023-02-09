@@ -20,7 +20,7 @@ export default function Contact() {
             return alert('Silahkan Lengkapi Data !')
         }
 
-        window.location.href = `https://api.whatsapp.com/send?phone=+6283857768930&text=${name}%20%0A${email}%20%0A${message}`
+        window.location.href = `https://api.whatsapp.com/send?phone=+6283857768930&text=nama%20%3A%20${name}%0Aemail%20%3A%20${email}%0Apesan%20%3A%20${message}`
 
         e.target.name.value = ''
         e.target.email.value = ''
