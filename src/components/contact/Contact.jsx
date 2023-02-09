@@ -20,7 +20,7 @@ export default function Contact() {
             return alert('Silahkan Lengkapi Data !')
         }
 
-        window.location.href = 'https://wa.me/+6283857768930'
+        window.location.href = `https://api.whatsapp.com/send?phone=+6283857768930&text=${name}&text=${email}&text=${message}`
 
         e.target.name.value = ''
         e.target.email.value = ''
@@ -43,7 +43,7 @@ export default function Contact() {
                 <div className="relative ">
 
                     <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                        <Icon icon="icon-park-outline:edit-name" className='text-slate-400' />
+                        <Icon icon="icon-park-outline:edit-name" className='text-slate-400 text-sm sm:text-lg' />
                     </div>
 
                     <input type="text" id='name' placeholder='Name' className='border-[1px] outline-orange-500 border-slate-400 py-4 pl-9  rounded-md text-sm sm:text-lg w-full ' />
@@ -51,7 +51,7 @@ export default function Contact() {
 
                 <div className="relative">
                     <div className="flex absolute inset-y-0 left-0 items-center pl-3  pointer-events-none">
-                        <Icon className='text-slate-400' icon={gmailIcon} />
+                        <Icon className='text-slate-400 text-sm sm:text-lg' icon={gmailIcon} />
                     </div>
 
                     <input type="email" id='email' placeholder='Email' className='border-[1px] outline-orange-500 border-slate-400 py-4 pl-9 rounded-md text-sm sm:text-lg w-full' />
@@ -59,7 +59,7 @@ export default function Contact() {
 
                 <div className="relative">
                     <div className="flex absolute inset-y-0 left-0 pt-5 sm:pt-6 pl-3  pointer-events-none">
-                        <Icon icon="ic:outline-message" className='text-slate-400' />
+                        <Icon icon="ic:outline-message" className='text-slate-400 text-sm sm:text-lg' />
                     </div>
 
                     <textarea id='message' placeholder='Message' className='w-full h-[200px] border-[1px] outline-orange-500 border-slate-400 py-4 pl-9  text-sm sm:text-lg rounded-md'></textarea>
@@ -69,9 +69,9 @@ export default function Contact() {
 
                 <button
                     type='submit'
-                    className='w-[150px] bg-slate-300 hover:bg-slate-200  h-[40px] rounded-xl duration-300 flex justify-center items-center gap-1'>
-                    <Icon icon={baselineWhatsapp} className="text-green-500 text-xl" />
-                    <p className='text-green-500'>Send Me</p>
+                    className='w-[110px] sm:w-[150px] bg-gradient-to-br from-green-500 to-green-400 hover:bg-gradient-to-br hover:from-green-700 hover:to-green-600 h-[40px] rounded-xl duration-1000 flex justify-center items-center gap-1'>
+                    <Icon icon={baselineWhatsapp} className="text-white text-sm sm:text-lg" />
+                    <p className='text-white sm:text-lg text-sm'>WhatsApp</p>
                 </button>
             </form>
         </div>
