@@ -20,7 +20,7 @@ export default function Contact() {
             return alert('Silahkan Lengkapi Data !')
         }
 
-        window.location.href = 'https://wa.me/083857768930'
+        window.location.href = 'https://wa.me/+6283857768930'
 
         e.target.name.value = ''
         e.target.email.value = ''
