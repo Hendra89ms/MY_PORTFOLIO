@@ -30,17 +30,17 @@ export default function Home() {
                         </div>
 
                         <div className='sm:mt-2'>
-                            <h1 className='font-bold text-lg sm:text-xl'>Social Media</h1>
+                            <h1 className='font-bold text-lg sm:text-xl text-slate-600'>Social Media</h1>
                             <div className='flex gap-3 sm:mt-2 mt-0'>
                                 <Link to={'https://github.com/Hendra89ms'}>
-                                    <Icon icon={githubIcon} className='sm:text-[35px] text-[28px]' />
+                                    <Icon icon={githubIcon} className='sm:text-[35px] text-[28px] text-slate-700' />
                                 </Link>
                                 <Link to={'https://www.linkedin.com/in/hendra-manase-sitorus-180b5a1a2/'}>
-                                    <Icon className='sm:text-[35px] text-[28px]' icon={linkedinIcon} />
+                                    <Icon className='sm:text-[35px] text-[28px] text-slate-700' icon={linkedinIcon} />
                                 </Link>
 
                                 <Link to={'https://mail.google.com/mail/u/0/#sent?compose=new'}>
-                                    <Icon className='sm:text-[35px] text-[28px]' icon={gmailIcon} />
+                                    <Icon className='sm:text-[35px] text-[28px] text-slate-700' icon={gmailIcon} />
                                 </Link>
 
                             </div>
