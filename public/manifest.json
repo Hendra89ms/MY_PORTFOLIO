@@ -9,8 +9,7 @@
     },
     {
       "src": "my_portfolio.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "type": "image/png"
     },
     {
       "src": "",
