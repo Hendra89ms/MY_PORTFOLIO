@@ -5,7 +5,7 @@ import githubIcon from '@iconify/icons-mdi/github';
 import gmailIcon from '@iconify/icons-mdi/gmail';
 import linkedinIcon from '@iconify/icons-mdi/linkedin';
 import { Link } from 'react-router-dom'
-import { Skills, Navbar, Projects, Contact } from '../../components';
+import { Skills, Navbar, Projects, Contact, Footer } from '../../components';
 
 export default function Home() {
 
@@ -73,6 +73,12 @@ export default function Home() {
             <Contact />
 
             {/* END Contact */}
+
+            {/* FOOTER */}
+
+            <Footer />
+
+            {/* END FOOTER */}
         </>
 
     );

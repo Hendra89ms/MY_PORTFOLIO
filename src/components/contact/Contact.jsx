@@ -31,11 +31,11 @@ export default function Contact() {
     return (
         <div
             id='contact'
-            className='w-screen  min-h-screen flex items-center flex-col gap-4  px-5 mt-20 '>
+            className='w-screen  min-h-screen justify-center sm:justify-start flex items-center flex-col gap-4  px-5 mt-20 '>
 
             <h1 className='text-xl sm:text-3xl font-bold underline decoration-orange-500'>Contact</h1>
 
-            <form onSubmit={handleWhatsapp} autoComplete='off' className='w-full sm:w-[600px] sm:px-8 sm:py-11 sm:focus-within:border-orange-200 sm:focus-within:border-[1.5px]  sm:focus-within:shadow-lg flex flex-col gap-4 rounded-md duration-300 ' >
+            <form onSubmit={handleWhatsapp} autoComplete='off' className='w-full sm:w-[600px] sm:px-8 sm:py-2 sm:focus-within:border-orange-200 sm:focus-within:border-[1.5px]  sm:focus-within:shadow-lg flex flex-col gap-4 rounded-md duration-300 '>
 
                 <p className='text-lg font-bold text-slate-500 mt-5'>Hello...👋 contact me now</p>
 

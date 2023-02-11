@@ -23,7 +23,7 @@ export default function Navbar() {
 
     return (
         <div className='bg-black w-full fixed top-0 left-0 z-50'>
-            <div className='md:w-[900px] mx-auto text-white h-[70px] flex justify-between px-3 sm:px-0 items-center  '>
+            <div className='md:w-[900px] mx-auto text-white h-[70px] flex justify-between px-3 sm:px-0 items-center '>
                 <h1 className='sm:text-xl select-none'>Hendra Manase <span className='text-red-500 '>Sitorus</span></h1>
 
 
