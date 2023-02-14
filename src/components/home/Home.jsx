@@ -24,8 +24,8 @@ export default function Home() {
                         </div>
 
                         <div className='text-slate-500 text-sm sm:text-lg '>
-                            I am a Full Stack Developer who has experience and expertise in building quality and scalable web applications.
-                            I understand technology and programming languages such as HTML, CSS, JavaScript, React, Node.js, and SQL. I am able to manage projects from start to finish, involve the team and work well in teamwork.
+                            I am a Front-End Developer who has experience and expertise in building quality and scalable web applications.
+                            I understand technology and programming languages such as HTML, CSS, JavaScript, React, Node.js. I am able to manage projects from start to finish, involve the team and work well in teamwork.
 
                         </div>
 
