@@ -32,48 +32,50 @@ export default function Contact() {
         <div
             id='contact'
             className='w-screen  min-h-screen justify-center sm:justify-start flex items-center flex-col gap-4  px-5 mt-20 '>
+            {/* */}
+            <div className='sm:border-orange-200 shadow-md shadow-orange-200 sm:border-[1.5px] p-5 rounded-md w-full md:w-[600px] md:flex md:flex-col md:items-center md:justify-center'>
+                <h1 className='text-xl text-center sm:text-3xl font-bold underline decoration-orange-200 text-slate-400 hover:shadow-md'>Contact</h1>
 
-            <h1 className='text-xl sm:text-3xl font-bold underline decoration-orange-500'>Contact</h1>
+                <form onSubmit={handleWhatsapp} autoComplete='off' className='w-full sm:w-[600px] sm:px-8 sm:py-2   sm:focus-within:shadow-lg flex flex-col gap-4 rounded-md duration-300 '>
 
-            <form onSubmit={handleWhatsapp} autoComplete='off' className='w-full sm:w-[600px] sm:px-8 sm:py-2 sm:focus-within:border-orange-200 sm:focus-within:border-[1.5px]  sm:focus-within:shadow-lg flex flex-col gap-4 rounded-md duration-300 '>
-
-                <p className='text-lg font-bold text-slate-500 mt-5'>Hello...👋 contact me now</p>
+                    <p className='text-lg font-bold text-slate-400 mt-5'>Hello...👋 contact me now</p>
 
 
-                <div className="relative ">
+                    <div className="relative ">
 
-                    <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                        <Icon icon="icon-park-outline:edit-name" className='text-slate-400 text-sm sm:text-lg' />
+                        <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                            <Icon icon="icon-park-outline:edit-name" className='text-slate-400 text-sm sm:text-lg' />
+                        </div>
+
+                        <input type="text" id='name' placeholder='Name' className='border-[1px] outline-orange-500 border-slate-400 py-4 pl-9  rounded-md text-sm sm:text-lg w-full ' />
                     </div>
 
-                    <input type="text" id='name' placeholder='Name' className='border-[1px] outline-orange-500 border-slate-400 py-4 pl-9  rounded-md text-sm sm:text-lg w-full ' />
-                </div>
+                    <div className="relative">
+                        <div className="flex absolute inset-y-0 left-0 items-center pl-3  pointer-events-none">
+                            <Icon className='text-slate-400 text-sm sm:text-lg' icon={gmailIcon} />
+                        </div>
 
-                <div className="relative">
-                    <div className="flex absolute inset-y-0 left-0 items-center pl-3  pointer-events-none">
-                        <Icon className='text-slate-400 text-sm sm:text-lg' icon={gmailIcon} />
+                        <input type="email" id='email' placeholder='Email' className='border-[1px] outline-orange-500 border-slate-400 py-4 pl-9 rounded-md text-sm sm:text-lg w-full' />
                     </div>
 
-                    <input type="email" id='email' placeholder='Email' className='border-[1px] outline-orange-500 border-slate-400 py-4 pl-9 rounded-md text-sm sm:text-lg w-full' />
-                </div>
+                    <div className="relative">
+                        <div className="flex absolute inset-y-0 left-0 pt-5 sm:pt-6 pl-3  pointer-events-none">
+                            <Icon icon="ic:outline-message" className='text-slate-400 text-sm sm:text-lg' />
+                        </div>
 
-                <div className="relative">
-                    <div className="flex absolute inset-y-0 left-0 pt-5 sm:pt-6 pl-3  pointer-events-none">
-                        <Icon icon="ic:outline-message" className='text-slate-400 text-sm sm:text-lg' />
+                        <textarea id='message' placeholder='Message' className='w-full h-[200px] border-[1px] outline-orange-500 border-slate-400 py-4 pl-9  text-sm sm:text-lg rounded-md'></textarea>
+
                     </div>
 
-                    <textarea id='message' placeholder='Message' className='w-full h-[200px] border-[1px] outline-orange-500 border-slate-400 py-4 pl-9  text-sm sm:text-lg rounded-md'></textarea>
 
-                </div>
-
-
-                <button
-                    type='submit'
-                    className='w-[110px] sm:w-[150px] bg-gradient-to-br from-green-500 to-green-400 hover:bg-gradient-to-br hover:from-green-700 hover:to-green-600 h-[40px] rounded-xl duration-1000 flex justify-center items-center gap-1'>
-                    <Icon icon={baselineWhatsapp} className="text-white text-sm sm:text-lg" />
-                    <p className='text-white sm:text-lg text-sm'>WhatsApp</p>
-                </button>
-            </form>
+                    <button
+                        type='submit'
+                        className='w-[110px] sm:w-[150px] bg-gradient-to-br from-orange-300 to-orange-200 hover:bg-gradient-to-br hover:from-orange-300 hover:to-orange-400 h-[40px] rounded-xl duration-1000 flex justify-center items-center gap-1'>
+                        <Icon icon={baselineWhatsapp} className="text-white text-sm sm:text-lg" />
+                        <p className='text-white sm:text-lg text-sm'>WhatsApp</p>
+                    </button>
+                </form>
+            </div>
         </div>
     );
 }
