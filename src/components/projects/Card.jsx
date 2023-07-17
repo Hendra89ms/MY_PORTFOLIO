@@ -2,6 +2,8 @@ import React from "react";
 import img1 from '../../assets/Screenshot 2023-07-13 142318.png'
 import img2 from '../../assets/Screenshot 2023-07-13 142633.png'
 import img3 from '../../assets/Screenshot 2023-07-17 110707.png'
+import img4 from '../../assets/Screenshot 2023-07-17 112627.png'
+import img5 from '../../assets/Screenshot 2023-07-17 113455.png'
 import { Link } from "react-router-dom";
 
 const Card = () => {
@@ -40,6 +42,25 @@ const Card = () => {
                         Button2="Demo"
                         linkLive='https://react-js-firebase-crud-todo-list-app.vercel.app/'
                         linkDemo='https://github.com/Hendra89ms/ReactJs_firebase_crud_todoListApp'
+                    />
+
+                    <SingleCard
+                        image={img4}
+                        CardTitle="Aplikasi crud BookApp"
+                        CardDescription="Aplikasi dibuat menggunakan teknologi react js, tailwind css dan firebase"
+                        Button1="Live"
+                        Button2="Demo"
+                        linkLive='https://book-apps-blue.vercel.app/'
+                        linkDemo='https://github.com/Hendra89ms/Book-Apps'
+                    />
+                    <SingleCard
+                        image={img5}
+                        CardTitle="Aplikasi Set Kalkulator"
+                        CardDescription="Aplikasi dibuat menggunakan teknologi react js, tailwind css "
+                        Button1="Live"
+                        Button2="Demo"
+                        linkLive='https://kalkulator-app-three.vercel.app/'
+                        linkDemo='https://github.com/Hendra89ms/Kalkulator-App'
                     />
 
                 </div>
