@@ -11,9 +11,9 @@ export default function Skills() {
         <div id='skills'
             className='md:w-[900px] px-2 sm:px-0 w-screen min-h-screen mx-auto flex flex-col mt-8 sm:mt-0 mb-3 sm:mb-0'>
             <div className='flex flex-col pl-5 items-start sm:mb-8 mb-4 text-slate-400'>
-                <h1 className='sm:text-3xl text-xl text-orange-200 font-bold  '>Skills</h1>
-                <hr className='text-orange-200 w-full py-3' />
-                <p className='sm:text-xl text-lg font-bold '>My Top <span className='text-orange-200 font-bold sm:text-xl text-lg'>Skills</span></p>
+                <h1 className='sm:text-3xl text-xl text-orange-200 font-bold underline decoration-orange-200 '>Skills</h1>
+                <hr className='text-orange-200 w-full mt-2 mb-3' />
+                <p className='sm:text-xl text-lg font-bold '>My Top <span className='text-orange-200  font-bold sm:text-xl text-lg'>Skills</span></p>
             </div>
 
             <div className='flex justify-center sm:justify-evenly items-center flex-wrap gap-6 px-4 text-slate-400'>

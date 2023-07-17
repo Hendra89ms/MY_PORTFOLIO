@@ -1,6 +1,8 @@
 import React from "react";
 import img1 from '../../assets/Screenshot 2023-07-13 142318.png'
 import img2 from '../../assets/Screenshot 2023-07-13 142633.png'
+import img3 from '../../assets/Screenshot 2023-07-17 110707.png'
+import { Link } from "react-router-dom";
 
 const Card = () => {
     return (
@@ -11,11 +13,13 @@ const Card = () => {
                     <SingleCard
                         image={img1}
                         CardTitle="Aplikasi E-Shopp App "
-                        titleHref="/#"
-                        btnHref="/#"
                         CardDescription="Aplikasi dibuat menggunakan teknologi react js dan tailwind css"
                         Button1="Live"
                         Button2='Demo'
+
+                        linkLive='https://eshop-app-eta.vercel.app/'
+                        linkDemo='https://github.com/Hendra89ms/eshop-App'
+
                     />
 
                     <SingleCard
@@ -24,14 +28,18 @@ const Card = () => {
                         CardDescription="Aplikasi dibuat menggunakan teknologi react js dan tailwind css"
                         Button1="Live"
                         Button2='Demo'
+                        linkLive='https://booking-apps.vercel.app/'
+                        linkDemo='https://github.com/Hendra89ms/Booking-Apps'
                     />
 
                     <SingleCard
-                        image="https://i.ibb.co/dL9fH7N/image-03-1.jpg"
-                        CardTitle=" Creative Card Component designs graphic elements"
-                        CardDescription=" Lorem ipsum dolor sit amet pretium consectetur adipiscing elit.
-          Lorem consectetur adipiscing elit."
-                        Button1="View Details"
+                        image={img3}
+                        CardTitle="Aplikasi Todo List"
+                        CardDescription="Aplikasi dibuat menggunakan teknologi react js, tailwind css dan firebase"
+                        Button1="Live"
+                        Button2="Demo"
+                        linkLive='https://react-js-firebase-crud-todo-list-app.vercel.app/'
+                        linkDemo='https://github.com/Hendra89ms/ReactJs_firebase_crud_todoListApp'
                     />
 
                 </div>
@@ -48,22 +56,23 @@ const SingleCard = ({
     Button2,
     CardDescription,
     CardTitle,
-    titleHref,
-    btnHref,
+    linkLive,
+    linkDemo
 }) => {
+
+
     return (
         <>
             {/*  */}
-            <div className=" bg-white rounded-lg h-[400px]">
-                <img src={image} alt="" className="w-full bg-cover rounded-t-md" />
-                <div className="p-8 text-center sm:p-5 md:p-7 xl:p-9 ">
+            <div className=" bg-white rounded-lg h-max">
+                <img src={image} alt="" className="w-full h-[150px] bg-cover rounded-t-md" />
+                <div className="p-8 text-center sm:p-5 md:p-7 xl:p-9 flex flex-col gap-2">
                     <h3>
-                        <a
-                            href={titleHref ? titleHref : "/#"}
+                        <div
                             className=" block text-xl font-semibold text-dark hover:text-primary sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
                         >
                             {CardTitle}
-                        </a>
+                        </div>
                     </h3>
                     <p className="text-base leading-relaxed mb-7 text-body-color">
                         {CardDescription}
@@ -71,21 +80,21 @@ const SingleCard = ({
 
                     <div className="flex gap-3 justify-center">
                         {Button1 && (
-                            <a
-                                href={btnHref ? btnHref : "#"}
+                            <Link
+                                to={linkLive}
                                 className="rounded-full border bg-black text-white py-2 px-7 text-base font-medium text-body-color transition-shadow hover:text-orange-200 hover:shadow-md hover:shadow-orange-200 duration-300"
                             >
                                 {Button1}
-                            </a>
+                            </Link>
                         )}
 
                         {Button2 && (
-                            <a
-                                href={btnHref ? btnHref : "#"}
+                            <Link
+                                to={linkDemo}
                                 className=" rounded-full border bg-black text-white py-2 px-7 text-base font-medium text-body-color transition-shadow hover:text-orange-200 hover:shadow-md hover:shadow-orange-200 duration-300"
                             >
                                 {Button2}
-                            </a>
+                            </Link>
                         )}
                     </div>
                 </div>
