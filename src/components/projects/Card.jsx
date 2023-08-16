@@ -4,6 +4,7 @@ import img2 from '../../assets/Screenshot 2023-07-13 142633.png'
 import img3 from '../../assets/Screenshot 2023-07-17 110707.png'
 import img4 from '../../assets/Screenshot 2023-07-17 112627.png'
 import img5 from '../../assets/Screenshot 2023-07-17 113455.png'
+import img6 from '../../assets/todoListApp.jpg';
 import { Link } from "react-router-dom";
 
 const Card = () => {
@@ -14,8 +15,8 @@ const Card = () => {
 
                     <SingleCard
                         image={img1}
-                        CardTitle="Aplikasi E-Shopp App "
-                        CardDescription="Aplikasi dibuat menggunakan teknologi react js dan tailwind css"
+                        CardTitle="E-Shopp App"
+                        CardDescription="Application created using react js and tailwind css technology, using useContext as state management"
                         Button1="Live"
                         Button2='Demo'
 
@@ -26,8 +27,8 @@ const Card = () => {
 
                     <SingleCard
                         image={img2}
-                        CardTitle="Aplikasi Booking App"
-                        CardDescription="Aplikasi dibuat menggunakan teknologi react js dan tailwind css"
+                        CardTitle="Booking App"
+                        CardDescription="Application created using react js and tailwind css technology"
                         Button1="Live"
                         Button2='Demo'
                         linkLive='https://booking-apps.vercel.app/'
@@ -36,8 +37,8 @@ const Card = () => {
 
                     <SingleCard
                         image={img3}
-                        CardTitle="Aplikasi Todo List"
-                        CardDescription="Aplikasi dibuat menggunakan teknologi react js, tailwind css dan firebase"
+                        CardTitle="Todo List App"
+                        CardDescription="Application created using react js technology, tailwind css and firebase, implementing CRUD"
                         Button1="Live"
                         Button2="Demo"
                         linkLive='https://react-js-firebase-crud-todo-list-app.vercel.app/'
@@ -46,8 +47,8 @@ const Card = () => {
 
                     <SingleCard
                         image={img4}
-                        CardTitle="Aplikasi crud BookApp"
-                        CardDescription="Aplikasi dibuat menggunakan teknologi react js, tailwind css dan firebase"
+                        CardTitle="BookApp crud app"
+                        CardDescription="Application created using react js technology, tailwind css and firebase"
                         Button1="Live"
                         Button2="Demo"
                         linkLive='https://book-apps-blue.vercel.app/'
@@ -55,8 +56,17 @@ const Card = () => {
                     />
                     <SingleCard
                         image={img5}
-                        CardTitle="Aplikasi Set Kalkulator"
-                        CardDescription="Aplikasi dibuat menggunakan teknologi react js, tailwind css "
+                        CardTitle="Calculator Set App"
+                        CardDescription="Application created using react js technology, tailwind css"
+                        Button1="Live"
+                        Button2="Demo"
+                        linkLive='https://kalkulator-app-three.vercel.app/'
+                        linkDemo='https://github.com/Hendra89ms/Kalkulator-App'
+                    />
+                    <SingleCard
+                        image={img6}
+                        CardTitle="Simple Todo List app"
+                        CardDescription="Application created using react js technology, tailwind css"
                         Button1="Live"
                         Button2="Demo"
                         linkLive='https://kalkulator-app-three.vercel.app/'
