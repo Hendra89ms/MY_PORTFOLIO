@@ -28,7 +28,7 @@ const Card = () => {
                     <SingleCard
                         image={img2}
                         CardTitle="Booking App"
-                        CardDescription="Application created using react js and tailwind css technology"
+                        CardDescription="The application was created using react js and tailwind css technology, and I implemented responsive website design"
                         Button1="Live"
                         Button2='Demo'
                         linkLive='https://booking-apps.vercel.app/'
