@@ -5,7 +5,7 @@ import gmailIcon from '@iconify/icons-mdi/gmail';
 import linkedinIcon from '@iconify/icons-mdi/linkedin';
 import { Link } from 'react-router-dom'
 import { Skills, Navbar, Projects, Contact, Footer } from '../../components';
-import PhotoMe from '../../assets/photoFb.jpg'
+import PhotoMe from '../../assets/photome.png'
 import './animate.css'
 
 export default function Home() {
@@ -23,12 +23,20 @@ export default function Home() {
         <>
             <Navbar />
 
-            <div className='w-full text-slate-400'>
-                <div id='home' className='md:w-[900px] px-6 sm:px-0 w-screen min-h-screen mx-auto  flex flex-col justify-center items-center mt-6 sm:mt-0 '>
+            <div className='w-full text-slate-400 sm:mt-28 mt-10'>
+                <div id='home' className='md:w-[900px] px-6 sm:px-0 w-full mx-auto  flex flex-col justify-center items-center  sm:mt-0 '>
 
-                    <div className='flex sm:flex-row flex-col-reverse justify-center items-center sm:gap-10 gap-0 sm:mt-6 '>
+                    <div className='w-full flex sm:flex-row flex-col justify-center items-center sm:gap-20 gap-0 sm:mt-6 '>
 
-                        <div className='md:w-[55%] flex flex-col gap-4 sm:gap-8 shadow-md shadow-orange-200 p-2 animate-slide-up'>
+                        <div className='md:w-[45%] px-8 pt-8 pb-5 sm:pb-0 sm:p-0 animate-slide-down'>
+                            <img
+                                src={PhotoMe}
+                                alt="photoMe"
+
+                                className=' h-[300px] w-[500px] my-8 md:my-0 md:h-[400px]  rounded-3xl duration-300' />
+                        </div>
+
+                        <div className='md:w-[55%] flex flex-col gap-4 sm:gap-8 p-2 animate-slide-up'>
 
                             <div className='shadow-md '>
                                 <p className='font-bold text-lg sm:text-xl '>Hello...👋 My Name is </p>
@@ -59,42 +67,27 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className='md:w-[45%] px-8 pt-8 pb-5 sm:pb-0 sm:p-0 animate-slide-down'>
-                            <img
-                                src={PhotoMe}
-                                alt="photoMe"
-
-                                className=' shadow-2xl h-[300px] my-8 md:my-0 md:h-[400px] shadow-orange-200 rounded-3xl duration-300' />
-                        </div>
-
                     </div>
 
+                    <div className='border-[1px] border-orange-500 w-full my-28'></div>
                 </div>
             </div>
 
-            {/* SKILLS */}
 
-            <Skills />
 
-            {/* END SKILLS */}
+            <div id='skills'>
+                <Skills />
+            </div>
 
-            {/* Projects */}
+            <div id='projects'>
+                <Projects />
+            </div>
 
-            <Projects />
-
-            {/* END Projects */}
-
-            {/* Contact */}
-
-            <Contact />
-
-            {/* END Contact */}
-
-            {/* FOOTER */}
+            <div id='contact'>
+                <Contact />
+            </div>
 
             <Footer />
-
-            {/* END FOOTER */}
         </>
 
     );

@@ -74,6 +74,7 @@ const Card = () => {
                     />
 
                 </div>
+                <div className='border-[1px] border-orange-500 w-full my-24'></div>
             </section>
         </>
     );
@@ -94,8 +95,7 @@ const SingleCard = ({
 
     return (
         <>
-            {/*  */}
-            <div className=" bg-white rounded-lg h-max">
+            <div className=" bg-white rounded-lg h-max hover:shadow-md hover:scale-105 hover:shadow-orange-500 duration-300">
                 <img src={image} alt="" className="w-full h-[150px] bg-cover rounded-t-md" />
                 <div className="p-8 text-center sm:p-5 md:p-7 xl:p-9 flex flex-col gap-2">
                     <h3>

@@ -30,11 +30,10 @@ export default function Contact() {
 
     return (
         <div
-            id='contact'
-            className='w-screen  min-h-screen justify-center sm:justify-start flex items-center flex-col gap-4  px-5 mt-20 '>
+            className='w-full justify-center sm:justify-start flex items-center flex-col gap-4  px-5 mt-10 mb-10'>
             {/* */}
-            <div className='sm:border-orange-200 shadow-md shadow-orange-200 sm:border-[1.5px] p-5 rounded-md w-full md:w-[600px] md:flex md:flex-col md:items-center md:justify-center'>
-                <h1 className='text-xl text-center sm:text-3xl font-bold underline decoration-orange-200 text-slate-400 hover:shadow-md'>Contact</h1>
+            <div className='sm:border-orange-200 shadow-sm shadow-orange-200 sm:border-[1.5px] p-5 rounded-md w-full md:w-[600px] md:flex md:flex-col md:items-center md:justify-center'>
+                <h1 className='text-xl text-center sm:text-3xl font-bold underline decoration-orange-200 text-orange-200 hover:shadow-md'>Contact</h1>
 
                 <form onSubmit={handleWhatsapp} autoComplete='off' className='w-full sm:w-[600px] sm:px-8 sm:py-2   sm:focus-within:shadow-lg flex flex-col gap-4 rounded-md duration-300 '>
 

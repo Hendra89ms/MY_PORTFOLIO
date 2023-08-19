@@ -8,8 +8,8 @@ import ReactJs from '../../assets/reactJs_icon.png'
 export default function Skills() {
 
     return (
-        <div id='skills'
-            className='md:w-[900px] px-2 sm:px-0 w-screen min-h-screen mx-auto flex flex-col mt-8 sm:mt-0 mb-3 sm:mb-0'>
+        <div
+            className='md:w-[900px] px-2 sm:px-0 w-screen mx-auto flex flex-col mt-10 sm:mt-0'>
             <div className='flex flex-col pl-5 items-start sm:mb-8 mb-4 text-slate-400'>
                 <h1 className='sm:text-3xl text-xl text-orange-200 font-bold underline decoration-orange-200 '>Skills</h1>
                 <hr className='text-orange-200 w-full mt-2 mb-3' />
@@ -73,9 +73,8 @@ export default function Skills() {
                     <p className='font-bold text-slate-500'>Intermediate</p>
                 </div>
 
-
-
             </div>
+            <div className='border-[1px] border-orange-500 w-full my-24'></div>
         </div>
     );
 }
