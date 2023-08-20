@@ -69,7 +69,7 @@ export default function Home() {
 
                     </div>
 
-                    <div className='border-[1px] border-orange-500 w-full my-28'></div>
+                    <div className='border-[1px] border-orange-500 w-full my-28 hidden md:block'></div>
                 </div>
             </div>
 

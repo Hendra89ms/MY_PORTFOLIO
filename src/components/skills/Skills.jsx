@@ -4,6 +4,7 @@ import Css from '../../assets/css_icon.png'
 import Js from '../../assets/javascript_icon.png'
 import NodeJs from '../../assets/node_js icon.png'
 import ReactJs from '../../assets/reactJs_icon.png'
+import figma from '../../assets/icon_figma.png'
 
 export default function Skills() {
 
@@ -73,8 +74,19 @@ export default function Skills() {
                     <p className='font-bold text-slate-500'>Intermediate</p>
                 </div>
 
+                <div className='w-full sm:w-[300px] h-[200px] rounded-xl flex flex-col justify-center items-center shadow-lg shadow-[rgb(102,187,106)] duration-300 hover:text-[rgb(102,187,106)]'>
+                    <div className='flex flex-col items-center justify-center'>
+                        <p className='font-bold sm:text-2xl text-xl '>Figma</p>
+                        <img src={figma} alt="css_icon" className='w-[100px] h-[100px]' />
+                    </div>
+                    <div className='border-[2px] w-[100px] border-[#5cd7f9] flex justify-center items-center rounded-full mt-2  '>
+                        <div className='w-full h-[4px] bg-[rgb(102,187,106)] mr-12 rounded-full '></div>
+                    </div>
+                    <p className='font-bold text-slate-500'>Beginner</p>
+                </div>
+
             </div>
-            <div className='border-[1px] border-orange-500 w-full my-24'></div>
+            <div className='border-[1px] border-orange-500 w-full my-24 hidden md:block'></div>
         </div>
     );
 }

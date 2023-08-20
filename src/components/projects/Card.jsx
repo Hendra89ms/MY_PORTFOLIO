@@ -74,7 +74,7 @@ const Card = () => {
                     />
 
                 </div>
-                <div className='border-[1px] border-orange-500 w-full my-24'></div>
+                <div className='border-[1px] border-orange-500 w-full my-24 hidden md:block'></div>
             </section>
         </>
     );
