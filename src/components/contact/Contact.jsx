@@ -69,7 +69,7 @@ export default function Contact() {
 
                     <button
                         type='submit'
-                        className='w-[110px] sm:w-[150px] bg-gradient-to-br from-orange-300 to-orange-200 hover:bg-gradient-to-br hover:from-orange-300 hover:to-orange-400 h-[40px] rounded-xl duration-1000 flex justify-center items-center gap-1'>
+                        className='w-[110px] sm:w-[150px] bg-gradient-to-br bg-[rgb(102,187,106)] hover:bg-[rgb(0,226,74)] h-[40px] rounded-xl duration-300 flex justify-center items-center gap-1'>
                         <Icon icon={baselineWhatsapp} className="text-white text-sm sm:text-lg" />
                         <p className='text-white sm:text-lg text-sm'>WhatsApp</p>
                     </button>
