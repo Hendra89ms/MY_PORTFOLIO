@@ -40,7 +40,7 @@ export default function Home() {
 
                             <div className='shadow-md '>
                                 <p className='font-bold text-lg sm:text-xl '>Hello...👋 My Name is </p>
-                                <h1 className='font-bold text-xl sm:text-2xl text-orange-200'>Hendra Manase Sitorus</h1>
+                                <h1 className='font-bold text-xl sm:text-2xl text-orange-200'>Hendra Ms</h1>
                             </div>
 
                             <div className='text-slate-400 text-sm sm:text-lg '>

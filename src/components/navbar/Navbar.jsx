@@ -21,7 +21,7 @@ export default function Navbar() {
     return (
         <div className='bg-black w-full fixed top-0 left-0 z-50 '>
             <div className='md:w-[900px] mx-auto text-white h-[70px] flex justify-between px-3 sm:px-0 items-center '>
-                <h1 className='sm:text-xl select-none shadow-sm shadow-orange-200'>Hendra Manase <span className='text-orange-200 '>Sitorus</span></h1>
+                <h1 className='sm:text-xl select-none shadow-sm shadow-orange-200'>Code With <span className='text-orange-200 '>Free</span></h1>
 
                 <div className="flex md:hidden">
                     <button

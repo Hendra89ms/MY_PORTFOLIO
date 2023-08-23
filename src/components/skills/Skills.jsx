@@ -20,7 +20,7 @@ export default function Skills() {
             <div className='flex justify-center sm:justify-evenly items-center flex-wrap gap-6 px-4 text-slate-400'>
 
                 <div className=' w-full sm:w-[300px] h-[200px] rounded-xl flex flex-col justify-center items-center shadow-md shadow-red-400 duration-300 hover:text-red-500 '>
-                    <div className='flex flex-col items-center justify-center'>
+                    <div className='flex flex-col items-center justify-center '>
                         <p className='font-bold sm:text-2xl text-xl'>Html</p>
                         <img src={Html} alt="html_icon" className='w-[100px] h-[100px]' />
                     </div>
